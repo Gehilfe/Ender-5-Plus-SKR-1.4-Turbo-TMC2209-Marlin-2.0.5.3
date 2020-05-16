@@ -62,7 +62,7 @@ In der Conditionals_LCD.h wurde nur in Zeile 586 der zweite Teil der if-Bedingun
 #if Z_HOME_DIR < 0 //&& !HAS_CUSTOM_PROBE_PIN <br>
 Ohne diese Änderung hatte das Homing der Z-Achse nicht funktioniert.
 
-Wenn die Firmware direkt verwendet werden soll, muss einfach nur die Datei *firmware.bin* aus dem Verzeichnis .pio/build/LPC1769 auf eine MicroSD Karte kopiert und in das SKR 1.4 gesteckt werden. Durch das Einschalten des Boards installiert sich die Firmware anschließend automatisch. Auf der Karte befindet sich nach erfolgreicher Installation der Firmware jetzt eine *FIRMWARE.CUR* Datei. Die Installation per Octoprint über einen Raspberry Pi wird im folgenden Abschnitt erklärt.
+Wenn die Firmware direkt verwendet werden soll, muss einfach nur die Datei *firmware.bin* aus dem Verzeichnis *Firmware* auf eine MicroSD Karte kopiert und in das SKR 1.4 gesteckt werden. Durch das Einschalten des Boards installiert sich die Firmware anschließend automatisch. Auf der Karte befindet sich nach erfolgreicher Installation der Firmware jetzt eine *FIRMWARE.CUR* Datei. Die Installation per Octoprint über einen Raspberry Pi wird im folgenden Abschnitt erklärt.
 
 Nach der Übertragung der Firmware kann es zu einer EEPROM Fehlermeldung kommen. In diesem Fall einfach per Terminal (z.B. über Octoprint) die Befehle **M502**, **M500**, **M501** an das Board senden.
 
